@@ -1,16 +1,3 @@
-from django.shortcuts import render
-from django.http import JsonResponse
-
-
-
-def main(request):
-    return render(request, 'index.html')
-
-
-def handle(request):
-    print(request.POST)
-    return JsonResponse({'class1': 'data1', 'class2': 'data2', 'class3': 'data3', 'entity': 'data4'})
-
-
-def paint(request):
-    return JsonResponse({"paint": "paint"})
+version https://git-lfs.github.com/spec/v1
+oid sha256:aabf79a4a09e897f1ed5dac1dd1457d07cb1bfeefa12f763dbb42848427743c7
+size 1221
