@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:429a3f1eb9de39bb4b0fafe7cc038e1a17db400ba895e94fb786d05087b2c960
-size 395
+"""
+ASGI config for hackathon project.
+
+It exposes the ASGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
+"""
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hackathon.settings')
+
+application = get_asgi_application()

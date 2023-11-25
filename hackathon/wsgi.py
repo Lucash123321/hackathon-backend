@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b15162424b5a2ded08d572f223ff0ebbe9e19291d49f74c98cbc98d27b4bddf1
-size 395
+"""
+WSGI config for hackathon project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
+"""
+
+import os
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hackathon.settings')
+
+application = get_wsgi_application()
